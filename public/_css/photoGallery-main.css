@@ -161,7 +161,7 @@ header {
 	text-decoration:none;
 	font-size:0.7em;
 	text-transform:uppercase;
-	padding:12px 6px; 
+	padding:12px 6px;
 	font-family: "proxima-nova",sans-serif;
 }
 .subNav a:nth-child(even) {
@@ -270,7 +270,7 @@ td {
 .film_roll_child.active {
   opacity: 1;
 }
-.film_roll_wrapper {
+.indvGallery {
     height: 300px !important;
   }
 .film_roll_child img {
@@ -460,7 +460,7 @@ header {
 	text-decoration:none;
 	font-size:0.75em;
 	text-transform:uppercase;
-	padding:5px 0.5%; 
+	padding:5px 0.5%;
 	margin-left:2%;
 	font-family: "proxima-nova",sans-serif;
 }
@@ -567,7 +567,7 @@ td {
 .film_roll_child.active {
   opacity: 1;
 }
-.film_roll_wrapper {
+.indvGallery {
     height: 600px !important;
   }
 .film_roll_child img {
@@ -752,7 +752,7 @@ header {
 	text-decoration:none;
 	font-size:0.8em;
 	text-transform:uppercase;
-	padding:5px 10px; 
+	padding:5px 10px;
 	margin-left:40px;
 	font-family: "proxima-nova",sans-serif;
 }
@@ -860,7 +860,7 @@ td {
 .film_roll_child.active {
   opacity: 1;
 }
-.film_roll_wrapper {
+.indvGallery {
   height: 700px !important;
 }
 
@@ -891,4 +891,27 @@ td {
   left: 50%;
   transform: translateX(-50%) translateY(-50%) ;
 }
+}
+
+
+.main.loading {
+  background-repeat: no-repeat;
+  background-image: url('../_images/loading.gif');
+  background-position: center center;
+}
+
+/* You dont need to repeat every styl */
+.main .indvGallery {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .95s ease-in-out;
+  -moz-transition: opacity .95s ease-in-out;
+   -webkit-transition: opacity .95s ease-in-out;
+}
+.main.loading .indvGallery{
+  overflow: hidden;
+  opacity: 0;
+}
+.film_roll_wrapper {
+  height: 90% !important;
 }

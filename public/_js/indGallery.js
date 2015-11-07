@@ -4,7 +4,8 @@ $(function() {
   var gallery = $('.indvGallery');
 
   gallery.imagesLoaded(function() {
-    console.log('images loaded');
+    gallery.parent().removeClass('loading');
+
     var fr = new FilmRoll({
       container: '.indvGallery',
       height: 700,
